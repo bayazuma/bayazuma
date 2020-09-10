@@ -1,0 +1,68 @@
+.container {
+  color: white;
+}
+
+.section {
+  margin-bottom: 70px;
+}
+
+.photo {
+  display: none;
+}
+
+.photo img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+
+.name {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 56px;
+  color: #fff;
+  letter-spacing: 3.25px;
+  margin-bottom: 62px;
+}
+
+.text {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  max-width: 80%;
+  font-size: 17px;
+  line-height: 40px;
+  color: #fff;
+  margin: 36px 0;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.heading {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 3.25px;
+  font-weight: 200;
+  line-height: 36px;
+  margin-bottom: 25px;
+}
+
+.list {
+}
+
+.capa {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 17px;
+  line-height: 36px;
+  font-weight: 300;
+  color: #999;
+}
+
+.contact a {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 17px;
+  line-height: 36px;
+  font-weight: 300;
+  color: #999;
+  text-decoration: underline;
+}
+

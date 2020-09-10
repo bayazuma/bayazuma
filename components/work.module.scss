@@ -1,0 +1,36 @@
+.container {
+}
+
+.section {
+  margin-bottom: 80px;
+  img {
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+  }
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 100;
+  font-size: 54px;
+  letter-spacing: 3.25px;
+  color: #000;
+}
+
+.link {
+  margin-bottom: 62px;
+}
+
+.link a {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  max-width: 80%;
+  font-size: 17px;
+  line-height: 40px;
+  margin: 36px 0;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #999;
+  text-decoration: underline;
+}
