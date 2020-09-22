@@ -11,6 +11,9 @@ export default function Gnav({ home }) {
       <li className={itemClass}>
         <Link href="/about"><a>About</a></Link>
       </li>
+      <li className={itemClass}>
+        <Link href="/graveyard"><a>Graveyard</a></Link>
+      </li>
       {
         // <li className={gnav.item}>
         //   <Link href="/experiments"><a>Experiments</a></Link>
