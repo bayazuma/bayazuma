@@ -1,5 +1,5 @@
 import React from "react"
-import TransitionRotate from "../../lib/animations/TransitionRotate"
+import TransitionRotate from "../../lib/controller/TransitionRotate"
 
 class TransitionRotatePage extends React.Component {
   anim: TransitionRotate

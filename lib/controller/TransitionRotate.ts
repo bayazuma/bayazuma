@@ -1,5 +1,5 @@
 import gsap from 'gsap'
-import Calc from '../../lib/utils/Calc'
+import Calc from '../utils/Calc'
 
 class TransitionRotate {
   el: HTMLElement

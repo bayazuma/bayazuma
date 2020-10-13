@@ -10,6 +10,9 @@ export default function Graveyard() {
         <li>
           <Link href="/graveyard/transition-rotate"><a>回転トランジション</a></Link>
         </li>
+        <li>
+          <Link href="/graveyard/bg-water"><a>背景ウォーター</a></Link>
+        </li>
       </ul>
       <style jsx>{`
         h1 {
