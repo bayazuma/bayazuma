@@ -7,7 +7,7 @@ export type Param = {
 abstract class ThreeComponent {
   container: THREE.Object3D
   geometry?: THREE.Geometry | THREE.BufferGeometry
-  material?: THREE.Material
+  material?: THREE.Material | THREE.ShaderMaterial | THREE.PointsMaterial
   object?: THREE.Mesh | THREE.Points
   param?: Param
 

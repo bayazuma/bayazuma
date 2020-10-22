@@ -6,6 +6,7 @@
 
 uniform float u_time;
 uniform vec2 u_resolution;
+uniform vec3 u_color;
 uniform float u_progress;
 
 varying vec2 vUv;
@@ -22,9 +23,9 @@ void main(void) {
   // 変数
   float speed = 5.2;
   float moveX = sin(u_time) * speed;
-  float baseY = max(-1.0 * u_progress * 5.0, -3.0);
+  float baseY = max(-1.0 * u_progress * 10.0, -10.0);
   float frequency = 3.0 * 6.2;
-  float amplitude = sin(u_time * noise * 5.0) * 0.3;
+  float amplitude = sin(u_time * noise * 2.0) * 0.3;
 
   // uv
   vec2 uv;
@@ -35,15 +36,13 @@ void main(void) {
   // shape
   float shape;
   tkbys_Sine_float(uvx, shape);
-  // tkbys_Multiply_float(shape, amplitude, shape);
   shape = shape * amplitude;
-  // tkbys_Step_float(shape, uvy, shape);
   shape = step(shape, uvy);
   shape = 1.0 - shape;
 
   // // カラー
   vec4 color;
-  color = vec4(0.99, 0.59, 0.85, 0.6);
+  color = vec4(u_color.r, u_color.g, u_color.b, 0.6);
 
   // マスター
   vec4 master = color * shape;

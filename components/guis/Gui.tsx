@@ -18,7 +18,6 @@ export default function Gui(props) {
       <div className="corner" onMouseDown={handleDragStart} onMouseUp={handleDragEnd}>
       </div>
       {Children.map(props.children, (child) => {
-          console.log(child)
           return (
             <div className="item">
               <label htmlFor={child.props.id}>{child.props.name}</label>
@@ -30,6 +29,7 @@ export default function Gui(props) {
       <style jsx>{`
         .container {
           position: fixed;
+          z-index: 999;
           display: inline-block;
           background-color: black;
         }

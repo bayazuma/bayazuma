@@ -1,7 +1,7 @@
 import * as THREE from 'three'
-import vertexShader from '../../lib/shaders/drip.vert'
-import fragmentShader from '../../lib/shaders/drip.frag'
-import ThreeComponent from './core/Component'
+import vertexShader from '../../../lib/shaders/drip.vert'
+import fragmentShader from '../../../lib/shaders/drip.frag'
+import ThreeComponent from '../core/Component'
 
 class Water2D extends ThreeComponent {
   constructor() {
@@ -22,7 +22,8 @@ class Water2D extends ThreeComponent {
       fragmentShader,
       uniforms: {
         u_time: { value: 0.0 },
-        u_progress: { value: 0.0 },
+        u_progress: { value: 0.5 },
+        u_color: { value: new THREE.Vector3(0.4470588235294118, 0.6392156862745098, 0.8901960784313725) },
         u_resolution: {
           value: new THREE.Vector2(window.innerWidth, window.innerHeight),
         },

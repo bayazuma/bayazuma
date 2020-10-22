@@ -11,7 +11,16 @@ export default function Graveyard() {
           <Link href="/graveyard/transition-rotate"><a>回転トランジション</a></Link>
         </li>
         <li>
-          <Link href="/graveyard/bg-water"><a>背景ウォーター</a></Link>
+          <Link href="/graveyard/daily-calendar"><a>日めくりカレンダー</a></Link>
+        </li>
+        <li>
+          <Link href="/graveyard/cold-air"><a>冷気パーティクル</a></Link>
+        </li>
+        <li>
+          <Link href="/graveyard/freezer"><a>イメージ冷凍</a></Link>
+        </li>
+        <li>
+          <Link href="/graveyard/bg-water"><a>ハーフ水</a></Link>
         </li>
       </ul>
       <style jsx>{`
