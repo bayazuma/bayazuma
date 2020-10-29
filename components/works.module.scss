@@ -1,33 +1,33 @@
 .container {
   text-transform: uppercase;
-  font-size: 7vw;
+  font-size: 11.904761904761903vw;
   font-family: 'Oswald', sans-serif;
   font-variation-settings: 'wght' 100;
   letter-spacing: 5px;
-  animation: anime 3s infinite;
+  // animation: anime 3s infinite;
   color: white;
 }
 
-@keyframes anime {
-  35% {
-    color: white;
-    letter-spacing: 5px;
-    font-variation-settings: 'wght' 100;
-  }
-  50% {
-    color: rgb(53, 43, 43);
-    letter-spacing: 10px;
-    font-variation-settings: 'wght' 500;
-  }
-  60% {
-    color: white;
-    letter-spacing: 5px;
-    font-variation-settings: 'wght' 100;
-  }
-}
+// @keyframes anime {
+//   35% {
+//     color: white;
+//     letter-spacing: 5px;
+//     font-variation-settings: 'wght' 100;
+//   }
+//   50% {
+//     color: rgb(53, 43, 43);
+//     letter-spacing: 10px;
+//     font-variation-settings: 'wght' 500;
+//   }
+//   60% {
+//     color: white;
+//     letter-spacing: 5px;
+//     font-variation-settings: 'wght' 100;
+//   }
+// }
 
 .item {
-  margin-bottom: 1em;
+  // margin-bottom: 1em;
 }
 
 .item a {

@@ -1,9 +1,8 @@
 import Link from 'next/link'
-import Layout from '../../components/layout'
 
 export default function Experiments() {
   return (
-    <Layout>
+    <>
       <h1>Experiments</h1>
       <ul>
         <li>
@@ -16,6 +15,6 @@ export default function Experiments() {
           <Link href="/experiments/react-three-fiber-shader"><a>react three fiber shader</a></Link>
         </li>
       </ul>
-    </Layout>
+    </>
     )
 }

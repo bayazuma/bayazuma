@@ -1,7 +1,7 @@
-import Layout from '../components/layout'
 import fetch from 'node-fetch'
 import Works from '../components/works';
 import { GetStaticProps } from 'next'
+import { motion } from 'framer-motion';
 
 export default function Home(data : {
   contents: any[]
@@ -10,9 +10,27 @@ export default function Home(data : {
   limit: number 
 }) {
   return (
-    <Layout home>
-      <Works list={data.contents}/>
-    </Layout>
+    <>
+    <div className='container'>
+      <motion.div exit={{ opacity: 0 }}>
+        <Works list={data.contents}/>
+      </motion.div>
+    </div>
+
+    <style jsx>{`
+      .container {
+        margin-top: 90px;
+        padding: 0 16px;
+        overflow: hidden;
+      }
+      @media all and (min-width: 480px) {
+        .container {
+          margin-top: 180px;
+          padding: 0 90px;
+        }
+      }
+    `}</style>
+    </>
   )
 }
 

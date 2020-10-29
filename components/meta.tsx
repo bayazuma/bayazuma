@@ -1,24 +1,14 @@
 import Head from 'next/head'
-import styles from './layout.module.scss'
-import Gnav from '../components/gnav'
-
 export const siteTitle = 'bayazuma'
 
-export default function Layout({
-  children,
-  home
-}: {
-  children: React.ReactNode
-  home?: boolean
-}) {
-  const wrapperClass = home ? `${styles.wrapper}` : `${styles.wrapper} ${styles.post}`
+export default function Meta() {
   return (
     <>
     <Head>
       <link rel="icon" href="/favicon.ico" />
       <meta
         name="description"
-        content="Learn how to build a personal website using Next.js"
+        content="bayazuma site"
       />
       <meta
         property="og:image"
@@ -29,14 +19,6 @@ export default function Layout({
       <meta name="og:title" content={siteTitle} />
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
-    <div className={wrapperClass}>
-      <header className={styles.header}>
-        <div className={styles.headerItem}><Gnav home={home} /></div>
-      </header>
-      <div className={styles.container}>
-        <main>{children}</main>
-      </div>
-    </div>
     </>
   )
 }

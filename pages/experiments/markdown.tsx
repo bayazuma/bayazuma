@@ -1,5 +1,4 @@
 import { getSortedPostsData } from '../../lib/posts'
-import Layout from '../../components/layout'
 import utilStyles from '../../styles/utils.module.scss'
 
 export async function getStaticProps() {
@@ -13,7 +12,7 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Markdown Blog</h2>
         <ul className={utilStyles.list}>
@@ -28,6 +27,6 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
-    </Layout>
+    </>
   )
 }

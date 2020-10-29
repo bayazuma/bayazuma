@@ -3,17 +3,31 @@
 }
 
 .section {
+  position: relative;
   margin-bottom: 70px;
 }
 
 .photo {
-  display: none;
+  // display: none;
+  position: absolute;
+  top: 250px;
+  left: 41.96429vw;
+  overflow: hidden;
+
+  width: 366px;
+  height: 500px;
+}
+
+@media all and (min-width: 480px) {
+  .photo {
+    top: 150px;
+  }
 }
 
 .photo img {
-  width: 128px;
-  height: 128px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .name {

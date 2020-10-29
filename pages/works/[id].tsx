@@ -1,4 +1,4 @@
-import Layout from '../../components/layout'
+import Meta from '../../components/meta'
 import fetch from 'node-fetch'
 import WorkComponent from '../../components/work';
 import { GetStaticProps, GetStaticPaths } from 'next'
@@ -14,9 +14,10 @@ export default function Work(data: {
 }) {
   // console.log(data)
   return (
-    <Layout>
+    <>
+      <Meta />
       <WorkComponent work={data} />
-    </Layout>
+    </>
   )
 }
 
